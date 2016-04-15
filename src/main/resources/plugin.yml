@@ -1,0 +1,11 @@
+name: SurvivalGames
+authors: [maker56,JefroyTJF]
+main: me.maker56.survivalgames.SurvivalGames
+version: Beta 1.9.5
+website: http://dev.bukkit.org/bukkit-plugins/survival_games
+softdepend: [WorldEdit,Vault,Multiverse-Core,BarAPI,PermissionsEx]
+
+commands:
+  sg:
+    description: SurvivalGames Main Command
+    aliases: [survivalgames,sg,hg,hungergames]
