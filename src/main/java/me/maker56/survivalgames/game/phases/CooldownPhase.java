@@ -1,5 +1,9 @@
 package me.maker56.survivalgames.game.phases;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Sound;
+import org.bukkit.scheduler.BukkitTask;
+
 import me.maker56.survivalgames.SurvivalGames;
 import me.maker56.survivalgames.Util;
 import me.maker56.survivalgames.arena.Arena;
@@ -7,10 +11,6 @@ import me.maker56.survivalgames.commands.messages.MessageHandler;
 import me.maker56.survivalgames.game.Game;
 import me.maker56.survivalgames.game.GameState;
 import me.maker56.survivalgames.user.User;
-
-import org.bukkit.Bukkit;
-import org.bukkit.Sound;
-import org.bukkit.scheduler.BukkitTask;
 
 public class CooldownPhase {
 	
@@ -60,7 +60,7 @@ public class CooldownPhase {
 				}
 				
 				if(time == 27) {
-					game.sendMessage(MessageHandler.getMessage("prefix") + "MAPINFO ï¿½7- ï¿½eName: ï¿½b" + arena.getName());
+					game.sendMessage(MessageHandler.getMessage("prefix") + "MAPINFO §7- §eName: §b" + arena.getName());
 				}
 				
 				if(time > 0 && (time % 5 == 0 || (time <= 10 && time > 0))) {

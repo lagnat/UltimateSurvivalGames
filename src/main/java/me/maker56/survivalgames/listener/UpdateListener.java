@@ -19,7 +19,7 @@ public class UpdateListener implements Listener {
 	public static void update(String version) {
 		UpdateListener.version = version;
 		System.out.println("[SurvivalGames] A newer version of survivalgames is available. (" + version + ") You can download it here: http://dev.bukkit.org/bukkit-plugins/ultimatesurvivalgames/ You're using " + SurvivalGames.version);
-		updateInfo = MessageHandler.getMessage("prefix") + "§eA newer version of SurvivalGames is available. §7(§b" + version + "§7) §eYou can download it here: §bhttp://dev.bukkit.org/bukkit-plugins/ultimatesurvivalgames/ §7You're using §o" + SurvivalGames.version;
+		updateInfo = MessageHandler.getMessage("prefix") + "Â§eA newer version of SurvivalGames is available. Â§7(Â§b" + version + "Â§7) Â§eYou can download it here: Â§bhttp://dev.bukkit.org/bukkit-plugins/ultimatesurvivalgames/ Â§7You're using Â§o" + SurvivalGames.version;
 		for(Player p : Bukkit.getOnlinePlayers()) {
 			if(PermissionHandler.hasPermission(p, Permission.LOBBY) || PermissionHandler.hasPermission(p, Permission.ARENA)) {
 				p.sendMessage(updateInfo);
